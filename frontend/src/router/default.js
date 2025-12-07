@@ -1,6 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router"
-
-const routes = [
+export const defaultRoutes = [
     {
 		path:'/',
 		redirect:'/home'
@@ -15,7 +13,7 @@ const routes = [
 		component: () => import("@/views/404.vue")
 	},
     {
-        name:"Home",
+        name:"home",
         path:"/home",
         meta:{
             title:"首页"
@@ -28,12 +26,3 @@ const routes = [
 		redirect: "/404"
 	}
 ]
-
-const router = createRouter({
-	//使用url的#符号之后的部分模拟url路径的变化,因为不会触发页面刷新,所以不需要服务端支持
-	//history: createWebHashHistory(), 
-	history: createWebHistory(),
-	routes
-})
-
-export default router

@@ -2,7 +2,7 @@
   <div class="nav-container">
     <div class="nav-buttons">
       <div class="nav-buttons-left">
-        <a-button class="nav-btn" @click="handleNavigation('file-test')">
+        <a-button class="nav-btn" @click="handleNavigation('home')">
           <template #icon><home-outlined style="font-size: 20px; color: #1677ff;" /></template>
           首页
         </a-button>
@@ -14,11 +14,11 @@
           </a-button>
           <template #overlay>
             <a-menu>
-              <a-menu-item key="user" @click="handleNavigation('auth-user')">
+              <a-menu-item key="user" @click="handleNavigation('facebook_pay')">
                 <template #icon><user-outlined style="font-size: 20px;color: #8e44ff;"/></template>
                 自动注册
               </a-menu-item>
-              <a-menu-item key="dollar" @click="handleNavigation('money-tool')">
+              <a-menu-item key="dollar" @click="handleNavigation('facebook_pay')">
                 <template #icon>
                   <dollar-outlined style="color: #2ecc71;" />
                 </template>
